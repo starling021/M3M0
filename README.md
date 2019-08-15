@@ -164,7 +164,7 @@ Download [Termux](https://play.google.com/store/apps/details?id=com.termux)
 git clone https://github.com/mrwn007/M3M0.git
 cd M3M0
 pip install -r requirements.txt
-python start.py
+python2 start.py
 ```
 
 ## Installation [Windows ](https://wikipedia.org/wiki/Microsoft_Windows)[![alt tag](http://icons.iconarchive.com/icons/tatice/cristal-intense/32/Windows-icon.png)](https://fr.wikipedia.org/wiki/Microsoft_Windows)
