@@ -7,10 +7,13 @@
 <h2>M3M0</h2>
 
 👨🏻‍💻 M3m0 Tool ⚔️ Website Vulnerability Scanner & Auto Exploiter
+
 <img src="https://i.imgur.com/Y8nAU5U.png" data-canonical-src="https://i.imgur.com/Y8nAU5U.png" style="max-width:100%;">
 
 <b>[📌] Auto Cms Detect<b>
-
+  
+<b>[0] OsCommerce 2.x Core RCE <b><br>
+  
 <b>[1] WordPress :<b><br>
 
 [📌] Adblock Blocker  <br>
@@ -20,8 +23,8 @@
 [📌] Cherry Plugin  
 [📌] Download Manager  
 [📌] Formcraft 
-<br>[📌] levoslideshow 
-<br>[📌] Power Zoomer  
+[📌] levoslideshow 
+[📌] Power Zoomer  
 [📌] Gravity Forms  
 [📌] Revslider Upload Shell  
 [📌] Revslider Dafece Ajax  
@@ -41,14 +44,14 @@
 [📌] Synoptic  
 [📌] Wp Shop  
 [📌] Content Injection 
-<br>[📌] Cubed Theme  
-<br>[📌] Rightnow Theme  
-<br>[📌] Konzept  
-<br>[📌] Omni Secure Files  
-<br>[📌] Pitchprint  
-<br>[📌] Satoshi  
-<br>[📌] Pinboard  
-<br>[📌] Barclaycart  
+[📌] Cubed Theme  
+[📌] Rightnow Theme  
+[📌] Konzept  
+[📌] Omni Secure Files  
+[📌] Pitchprint  
+[📌] Satoshi  
+[📌] Pinboard  
+[📌] Barclaycart  
 
 <b>[2] Joomla<br>
 
@@ -63,17 +66,20 @@
 [📌] Com Users  
 [📌] Com Weblinks<br>
 [📌] mod_simplefileupload 
-<br>[📌] Com Facileforms  
-<br>[📌] Com Jwallpapers 
-<br>[📌] Com Extplorer 
-<br>[📌] Com Rokdownloads 
-<br>[📌] Com Sexycontactform 
-<br>[📌] Com Jbcatalog 
+[📌] Com Facileforms  
+[📌] Com Jwallpapers 
+[📌] Com Extplorer 
+[📌] Com Rokdownloads 
+[📌] Com Sexycontactform 
+[📌] Com Jbcatalog 
 
 <b>[3] DruPal<br> 
 
 [📌] Add Admin
-<br>[📌] Drupalgeddon <br><br>
+[📌] Drupal Geddon2 Exploit - Upload shell + Index
+[📌] CVE-2019-6340 Drupal8 RCE Exploit
+[📌] Drupal BruteForcer
+
 [4] PrestaShop<br>
 
 [📌] columnadverts  
@@ -103,7 +109,9 @@
 [📌] tdpsthemeoptionpanel  
 [📌] psmodthemeoptionpanel  
 [📌] masseditproduct
-<br>[📌] blocktestimonial <br>
+[📌] blocktestimonial
+
+<b> Opencart BruteForce<br>
 
 <b>[5] Lokomedia<br>
 
@@ -134,11 +142,6 @@
 <p>run the tool with this command<p>
 <code>python start.py</code>
 
-<hr> 
-<h2>BUG ?</h2>
-<ul><li>Submit new issue</li></ul><hr>
-<h2>My New Private Tool</h2>
-<hr>
 <h2>💬 Contact</h2>
 <li>You Want Ask About Any Thing Add Me On Discord : @marwan.007#3936</li>
 <hr>
