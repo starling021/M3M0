@@ -69,7 +69,7 @@ def logo():
            (N############p    6)Mass Upload Shell In Wordpress (user&password)
             NRR########RRE    7)Mass Upload Shell In Joomla (user&password)
             ;@##########M^    8)all Admin Login Bypass & Exploit
-             N#########M#/    9)Port Scanner
+             N#########M#/    
              7K###R#R###M7    
              (N##M=(N##R-
              #N##-  N##M'
@@ -219,23 +219,6 @@ elif choice == '8':
                 os.system( "cd Tools/tool8 && chmod +x cms.py && python cms.py" )
             if system() == 'Windows':
                 os.system( 'cd Tools/tool8 && cms.py' )
-            else:
-                print('unknown error :| ')
-        elif t == 'n':
-            main()
-        else:
-            print('unknown error :| ')
-elif choice == '9':
-        print("""\n\033[91m Port Scanner Just but your host and port from - to
-
-         y = yes 
-         n = no\033[0m""")
-        t = raw_input( '~>' )
-        if t == 'y':
-            if system() == 'Linux':
-                os.system( "cd Tools/tool9 && chmod +x portscanner.py && python portscanner.py" )
-            if system() == 'Windows':
-                os.system( 'cd Tools/tool9 && portscanner.py' )
             else:
                 print('unknown error :| ')
         elif t == 'n':
