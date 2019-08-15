@@ -90,8 +90,8 @@ logo()
 
 choice = raw_input( ' choice Number => ' )
 if choice == '1':
-    print("""\n\033[91m Go to Tools/tool1 and put ur list of Ips  there
-	result will be in folder reasult with name result.txt
+    print("""\n\033[91m Just select one of the options available in the tool
+	and but your domain
 
  y = yes 
  n = no\033[0m""")
@@ -175,7 +175,7 @@ elif choice == '5':
                         print('unknown error :| ')
 elif choice == '6':
                         print("""\n\033[91m Go to Tools/tool6 
-                        	Put Ur  Lit : https://site.com/wp-login.php@user#&pass@
+                        	Put Ur  List like this : https://site.com/wp-login.php@user#&pass@
                          y = yes 
                          n = no\033[0m""")
                         t = raw_input( '~>' )
@@ -192,7 +192,7 @@ elif choice == '6':
                             print('unknown error :| ')
 elif choice == '7':
                             print("""\n\033[91m Go to Tools/tool7 
-                            	Put Ur  Lit : http://www.site.com/administrator/index.php&user&~password#
+                            	Put Ur  List like this : http://www.site.com/administrator/index.php&user&~password#
                              y = yes 
                              n = no\033[0m""")
                             t = raw_input( '~>' )
