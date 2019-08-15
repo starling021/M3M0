@@ -1,64 +1,159 @@
-import time,sys
-from http_request_randomizer.requests.proxy.requestProxy import RequestProxy
-import sys,os,re,socket,binascii,time,json,random,threading,Queue,pprint,urlparse,smtplib,telnetlib,os.path,hashlib,string,urllib2,glob,sqlite3,urllib,argparse,marshal,base64,colorama,requests
-from colorama import *
-from random import choice
-from colorama import Fore,Back,init
-from email.mime.multipart import MIMEMultipart
-from email.mime.text import MIMEText
-from platform import system
-from Queue import Queue
-from time import strftime
-from urlparse import urlparse
-from urllib2 import urlopen
-colorama.init()
+#!/usr/bin/env python2.7
+#
+#
+#
 
-
-# Now regular ANSI codes should work, even in Windows
-CLEAR_SCREEN = '\033[2J'
-RED = '\033[31m'   # mode 31 = red forground
-RESET = '\033[0m'  # mode 0  = reset
-BLUE  = "\033[34m"
-CYAN  = "\033[36m"
-GREEN = "\033[32m"
-RESET = "\033[0m"
-BOLD    = "\033[m"
-REVERSE = "\033[m"
-
-def logo():
-        clear = "\x1b[0m"
-        colors = [36, 32, 34, 35, 31, 37  ]
-
-        x = """ 
- _____                              _____       
-|  __ \                            |_   _|      
-| |__) |_____   _____  ___ _ __ ___  | |  _ __  
-|  _  // _ \ \ / / _ \/ _ \ '__/ __| | | | '_ \ 
-| | \ \  __/\ V /  __/  __/ |  \__ \_| |_| |_) |
-|_|  \_\___| \_/ \___|\___|_|  |___/_____| .__/ 
-                                         | |    
-     C0d3d by marwan007                  |_|    HackerTarget..
-			                  """
-        for N, line in enumerate(x.split("\n")):
-            sys.stdout.write("\x1b[1;%dm%s%s\n" % (random.choice(colors), line, clear))
-            time.sleep(0.05)
-logo()
-
-
-taz = raw_input("IPS :")
-with open(taz) as f :
-    for i in f :
-
-        req_proxy = RequestProxy()
-        api = 'http://api.hackertarget.com/reverseiplookup/?q='+i
-        try :
-            request = req_proxy.generate_proxied_request(api)
-            if request is not None:
-                print("\t Response: ip={0}".format(u''.join(request.text).encode('utf-8')))
-                save = open("result.txt","a")
-                save.write(request.text + '\n')
-                save.close()
-                print "Ips : ==> " , i
-
-        except :
-            print "Dead Proxy"
+import os
+import sys
+d3=os.system("curl http://ipinfo.io/ip")
+os.system("cls && cls && cls")
+logo = '''\033[0m 
+_|_|_|                                                                  _|_|_|            
+_|    _|    _|_|    _|      _|    _|_|      _|_|    _|  _|_|    _|_|_|    _|    _|_|_|    
+_|_|_|    _|_|_|_|  _|      _|  _|_|_|_|  _|_|_|_|  _|_|      _|_|        _|    _|    _|  
+_|    _|  _|          _|  _|    _|        _|        _|            _|_|    _|    _|    _|  
+_|    _|    _|_|_|      _|        _|_|_|    _|_|_|  _|        _|_|_|    _|_|_|  _|_|_|    
+                                                                                _|        
+                                                                                _| \033[0m  \033[91m    \033[1m 
+       }--{+} C0d3d By Marwan007 {+}--{
+     }----{+}  instagarm/mrwn.007 {+}----{
+     '''
+menu = '''\033[0m
+    {1}--Whois lookup
+    {2}--Traceroute
+    {3}--DNS Lookup
+    {4}--Reverse DNS Lookup
+    {5}--GeoIP Lookup
+    {6}--Port Scan
+    {7}--Reverse IP Lookup
+    {99}-Exit                                                                                                                   
+ '''
+print logo
+print menu
+def quit():
+            con = raw_input('Continue [Y/n] -> ')
+            if con[0].upper() == 'N':
+                exit()
+            else:
+                os.system("cls")
+                print logo
+                print menu
+                select()
+           
+def  select():
+  try:
+    choice = input("M3M0~# ")
+    if choice == 1:
+      d3 = raw_input('Enter IP Or Domain : ')
+      os.system("cls")
+      print("""
+ _       ____  ______  _________
+| |     / / / / / __ \/  _/ ___/
+| | /| / / /_/ / / / // / \__ \ 
+| |/ |/ / __  / /_/ _/ / ___/ / 
+|__/|__/_/ /_/\____/___//____/                                  
+      """)
+      os.system("curl http://api.hackertarget.com/whois/?q=" + d3)
+      print("")
+      quit()
+    elif choice == 2:
+      d3 = raw_input('Enter IP Or Domain : ')
+      os.system("cls")
+      print("""
+ ____ ____   __   ___ ____ ____ _____ __  __ ____ ____ 
+(_  _(  _ \ /__\ / __( ___(  _ (  _  (  )(  (_  _( ___)
+  )(  )   //(__)( (__ )__) )   /)(_)( )(__)(  )(  )__) 
+ (__)(_)\_(__)(__\___(____(_)\_(_____(______)(__)(____)
+""")
+      os.system("curl https://api.hackertarget.com/mtr/?q=" + d3 )
+      print("")
+      quit()
+    elif choice == 3:
+      d3 = raw_input('Enter Domain : ')
+      os.system("cls")
+      print("""
+______ _   _ _____   _                 _                
+|  _  | \ | /  ___| | |               | |               
+| | | |  \| \ `--.  | |     ___   ___ | | ___   _ _ __  
+| | | | . ` |`--. \ | |    / _ \ / _ \| |/ | | | | '_ \ 
+| |/ /| |\  /\__/ / | |___| (_) | (_) |   <| |_| | |_) |
+|___/ \_| \_\____/  \_____/\___/ \___/|_|\_\\__,_| .__ / 
+                                                 | |    
+                                                 |_|     
+""")
+      os.system("curl http://api.hackertarget.com/dnslookup/?q=" + d3 )
+      print("")
+      quit()    
+    elif choice == 0:
+      print "Bye Bye"
+      os.system("cls")
+      exit()
+    elif choice == 4:
+	  d3 = raw_input('Enter IP Address - IP Range Or Domain  : ')
+	  os.system("cls")
+	  print("""
+ _____                            ____  _____ _____ 
+| __  |___ _ _ ___ ___ ___ ___   |    \|   | |   __|
+|    -| -_| | | -_|  _|_ -| -_|  |  |  | | | |__   |
+|__|__|___|\_/|___|_| |___|___|  |____/|_|___|_____|
+                                                    
+	  """)
+	  os.system("curl https://api.hackertarget.com/reversedns/?q=" + d3 )
+	  print("")
+	  quit()
+    elif choice == 5:
+	  d3 = raw_input('Enter IP Or Domain : ')
+	  os.system("cls")
+	  print("""
+   _____           _____ _____  
+  / ____|         |_   _|  __ \ 
+ | |  __  ___  ___  | | | |__) |
+ | | |_ |/ _ \/ _ \ | | |  ___/ 
+ | |__| |  __| (_) _| |_| |     
+  \_____|\___|\___|_____|_|     
+                                	
+	""")
+	  os.system("curl http://api.hackertarget.com/geoip/?q=" + d3 )
+	  print("")
+	  print("")
+	  quit()
+    elif choice == 6:
+      d3 = raw_input('Enter IP Or Domain : ')
+      os.system("cls")
+      print("""
+     __                         __                 
+  /\ \ \_ __ ___   __ _ _ __   / _\ ___ __ _ _ __  
+ /  \/ | '_ ` _ \ / _` | '_ \  \ \ / __/ _` | '_ \ 
+/ /\  /| | | | | | (_| | |_) | _\ | (_| (_| | | | |
+\_\ \/ |_| |_| |_|\__,_| .__/  \__/\___\__,_|_| |_|
+                       |_|                         
+      """)
+      os.system("curl http://api.hackertarget.com/nmap/?q=" + d3 )
+      print("")
+      quit()
+    elif choice == 7:
+	  d3 = raw_input('Enter IP Or Domain : ')
+	  os.system("cls")
+	  print("""
+ (   (      (                             
+ )\ ))\ )   )\ )            )             
+(()/(()/(  (()/(         ( /(   (         
+ /(_)/(_))  /(_)) (   (  )\()) ))\ `  )   
+(_))(_))   (_))   )\  )\((_)\ /((_)/(/(   
+|_ _| _ \  | |   ((_)((_| |(_(_))(((_)_\  
+ | ||  _/  | |__/ _ / _ | / /| || | '_ \) 
+|___|_|    |____\___\___|_\_\ \_,_| .__/  
+                                  |_|     
+	  """)
+	  os.system("wget http://api.hackertarget.com/reverseiplookup/?q=" + d3 )
+	  os.system("cls")
+	  os.system("curl http://api.hackertarget.com/reverseiplookup/?q=" + d3 )
+	  print("")
+	  print("\033[91m\033[1mFile Saved On : ")
+	  os.system("dir")
+	  print("File : index.html?q=" +d3)
+	  print("\033[0m")
+	  quit()
+  except(KeyboardInterrupt):
+    print ""
+select()
