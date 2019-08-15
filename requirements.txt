@@ -1,0 +1,7 @@
+requests
+colorama
+smtplib
+socket
+mechanize
+bs4
+lxml
