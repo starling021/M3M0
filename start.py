@@ -70,7 +70,7 @@ def logo():
             NRR########RRE    7)Mass Upload Shell In Joomla (user&password)
             ;@##########M^    8)all Admin Login Bypass & Exploit
              N#########M#/    9)Port Scanner
-             7K###R#R###M7    10)Update
+             7K###R#R###M7    
              (N##M=(N##R-
              #N##-  N##M'
              jNRR'  NNNM/
@@ -242,19 +242,3 @@ elif choice == '9':
             main()
         else:
             print('unknown error :| ')
-elif choice == '10':
-                            print("""\n\033[91m check Update
-                             y = yes 
-                             n = no\033[0m""")
-                            t = raw_input( '~>' )
-                            if t == 'y':
-                                if system() == 'Linux':
-                                    os.system( "cd Tools/tool10 && chmod +x updater.py && python updater.py" )
-                                if system() == 'Windows':
-                                    os.system( 'cd Tools/tool10 && updater.py' )
-                                else:
-                                    print('unknown error :| ')
-                            elif t == 'n':
-                                main()
-                            else:
-                                print('unknown error :| ')			
