@@ -98,7 +98,7 @@ if choice == '1':
     t = raw_input( '~>' )
     if t == 'y':
         if system() == 'Linux':
-            os.system( "cd Tools/tool1 && chmod +x api.py && python api.py" )
+            os.system( "cd Tools/tool1 && chmod +x api.py && python2 api.py" )
         if system() == 'Windows':
             os.system( 'cd Tools/tool1 && api.py' )
         else:
@@ -116,7 +116,7 @@ elif choice == '2':
         t = raw_input( '~>' )
         if t == 'y':
             if system() == 'Linux':
-                os.system( "cd Tools/tool2 && chmod +x cms.py && python cms.py" )
+                os.system( "cd Tools/tool2 && chmod +x cms.py && python2 cms.py" )
             if system() == 'Windows':
                 os.system( 'cd Tools/tool2 && cms.py' )
             else:
@@ -132,7 +132,7 @@ elif choice == '3':
             t = raw_input( '~>' )
             if t == 'y':
                 if system() == 'Linux':
-                    os.system( "cd Tools/tool3 && chmod +x exp.py && python exp.py" )
+                    os.system( "cd Tools/tool3 && chmod +x exp.py && python2 exp.py" )
                 if system() == 'Windows':
                     os.system( 'cd Tools/tool3 && exp.py' )
                 else:
@@ -148,7 +148,7 @@ elif choice == '4':
                 t = raw_input( '~>' )
                 if t == 'y':
                     if system() == 'Linux':
-                        os.system( "cd Tools/tool4 && chmod +x Bot.py && python Bot.py" )
+                        os.system( "cd Tools/tool4 && chmod +x Bot.py && python2 Bot.py" )
                     if system() == 'Windows':
                         os.system( 'cd Tools/tool4 && run.bat' )
                     else:
@@ -164,7 +164,7 @@ elif choice == '5':
                     t = raw_input( '~>' )
                     if t == 'y':
                         if system() == 'Linux':
-                            os.system( "cd Tools/tool5 && chmod +x 007.py && python 007.py" )
+                            os.system( "cd Tools/tool5 && chmod +x 007.py && python2 007.py" )
                         if system() == 'Windows':
                             os.system( 'cd Tools/tool5 && 007.py' )
                         else:
@@ -181,7 +181,7 @@ elif choice == '6':
                         t = raw_input( '~>' )
                         if t == 'y':
                             if system() == 'Linux':
-                                os.system( "cd Tools/tool6 && chmod +x up.py && python up.py" )
+                                os.system( "cd Tools/tool6 && chmod +x up.py && python2 up.py" )
                             if system() == 'Windows':
                                 os.system( 'cd Tools/tool6 && up.py' )
                             else:
@@ -198,7 +198,7 @@ elif choice == '7':
                             t = raw_input( '~>' )
                             if t == 'y':
                                 if system() == 'Linux':
-                                    os.system( "cd Tools/tool7 && chmod +x shelljm.py && python shelljm.py" )
+                                    os.system( "cd Tools/tool7 && chmod +x shelljm.py && python2 shelljm.py" )
                                 if system() == 'Windows':
                                     os.system( 'cd Tools/tool7 && shelljm.py' )
                                 else:
@@ -216,7 +216,7 @@ elif choice == '8':
         t = raw_input( '~>' )
         if t == 'y':
             if system() == 'Linux':
-                os.system( "cd Tools/tool8 && chmod +x cms.py && python cms.py" )
+                os.system( "cd Tools/tool8 && chmod +x cms.py && python2 cms.py" )
             if system() == 'Windows':
                 os.system( 'cd Tools/tool8 && cms.py' )
             else:
