@@ -68,10 +68,10 @@ def logo():
             N############b    5)Modern login page (Bruteforcer)
            (N############p    6)Mass Upload Shell In Wordpress (user&password)
             NRR########RRE    7)Mass Upload Shell In Joomla (user&password)
-            ;@##########M^    8)all Admin Login Bypass & Exploit
-             N#########M#/    
-             7K###R#R###M7    
-             (N##M=(N##R-
+            ;@##########M^    8)Mass Wordpress,Joomla,Drupal,Magento& OpenCart (Bruteforcer)
+             N#########M#/    9)all Admin Login Bypass & Exploit
+             7K###R#R###M7    10)MD5 Ckracker
+             (N##M=(N##R-     11)Google Dorcker Bypass Captcha
              #N##-  N##M'
              jNRR'  NNNM/
              4NRb   'TN#\
@@ -208,17 +208,69 @@ elif choice == '7':
                             else:
                                 print('unknown error :| ')
 elif choice == '8':
-        print("""\n\033[91m Go to Tools/tool2
-        	Put Ur  List of Sites in tool2
+        print("""\n\033[91m Go to Tools/tool8
+        	Put Ur  List of Sites in list.txt file 
 
          y = yes 
          n = no\033[0m""")
         t = raw_input( '~>' )
         if t == 'y':
             if system() == 'Linux':
-                os.system( "cd Tools/tool8 && chmod +x cms.py && python2 cms.py" )
+                os.system( "cd Tools/tool8 && chmod +x bruter.pl && perl bruter.pl -l list.txt -p passwords.txt" )
             if system() == 'Windows':
-                os.system( 'cd Tools/tool8 && cms.py' )
+                os.system( 'cd Tools/tool8 && perl bruter.pl -l list.txt -p passwords.txt' )
+            else:
+                print('unknown error :| ')
+        elif t == 'n':
+            main()
+        else:
+            print('unknown error :| ')
+elif choice == '9':
+        print("""\n\033[91m Go to Tools/tool9
+        	Put Ur  List of Sites in tool9
+
+         y = yes 
+         n = no\033[0m""")
+        t = raw_input( '~>' )
+        if t == 'y':
+            if system() == 'Linux':
+                os.system( "cd Tools/tool9 && chmod +x cms.py && python2 cms.py" )
+            if system() == 'Windows':
+                os.system( 'cd Tools/tool9 && cms.py' )
+            else:
+                print('unknown error :| ')
+        elif t == 'n':
+            main()
+        else:
+            print('unknown error :| ')			
+elif choice == '10':
+        print("""\n\033[91m Just but your MD5 Hash
+
+         y = yes 
+         n = no\033[0m""")
+        t = raw_input( '~>' )
+        if t == 'y':
+            if system() == 'Linux':
+                os.system( "cd Tools/tool10 && chmod +x md5.py && python2 md5.py" )
+            if system() == 'Windows':
+                os.system( 'cd Tools/tool10 && md5.py' )
+            else:
+                print('unknown error :| ')
+        elif t == 'n':
+            main()
+        else:
+            print('unknown error :| ')
+elif choice == '11':
+        print("""\n\033[91m Just but your Dork
+
+         y = yes 
+         n = no\033[0m""")
+        t = raw_input( '~>' )
+        if t == 'y':
+            if system() == 'Linux':
+                os.system( "cd Tools/tool11 && php go.php" )
+            if system() == 'Windows':
+                os.system( 'cd Tools/tool11 && php go.php' )
             else:
                 print('unknown error :| ')
         elif t == 'n':
