@@ -8,7 +8,7 @@
 
 👨🏻‍💻 M3m0 Tool ⚔️ Website Vulnerability Scanner & Auto Exploiter
 
-<img src="https://i.imgur.com/58LneYb.png" data-canonical-src="https://i.imgur.com/58LneYb.png" style="max-width:100%;">
+<img src="https://i.imgur.com/EyGEKUT.jpg" data-canonical-src="https://i.imgur.com/EyGEKUT.jpg" style="max-width:100%;">
 
 <b>[📌] Auto Cms Detect<b>
   
