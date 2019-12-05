@@ -277,3 +277,39 @@ elif choice == '11':
             main()
         else:
             print('unknown error :| ')
+elif choice == '12':
+        print("""\n\033[91m Go to Tools/tool12
+        	Put Ur  List of Sites in list.txt file
+
+         y = yes 
+         n = no\033[0m""")
+        t = raw_input( '~>' )
+        if t == 'y':
+            if system() == 'Linux':
+                os.system( "cd Tools/tool12 && python2 exp.py" )
+            if system() == 'Windows':
+                os.system( 'cd Tools/tool12 && python exp.py' )
+            else:
+                print('unknown error :| ')
+        elif t == 'n':
+            main()
+        else:
+            print('unknown error :| ')
+elif choice == '13':
+        print("""\n\033[91m Go to Tools/tool13
+        	Put Ur  List of Sites in list.txt file
+
+         y = yes 
+         n = no\033[0m""")
+        t = raw_input( '~>' )
+        if t == 'y':
+            if system() == 'Linux':
+                os.system( "cd Tools/tool13 && php vBot.php list.txt" )
+            if system() == 'Windows':
+                os.system( 'cd Tools/tool13 && php vBot.php list.txt' )
+            else:
+                print('unknown error :| ')
+        elif t == 'n':
+            main()
+        else:
+            print('unknown error :| ')			
