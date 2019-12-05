@@ -72,8 +72,8 @@ def logo():
              N#########M#/    9)all Admin Login Bypass & Exploit
              7K###R#R###M7    10)MD5 Ckracker
              (N##M=(N##R-     11)Google Dorcker Bypass Captcha
-             #N##-  N##M'
-             jNRR'  NNNM/
+             #N##-  N##M'     12) Laravel phpunit RCE
+             jNRR'  NNNM/     13) vBulletin RCE
              4NRb   'TN#\
              4NN     NNT
               bL     N@
